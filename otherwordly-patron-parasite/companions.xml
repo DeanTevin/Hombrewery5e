@@ -4,8 +4,8 @@
 		<name>Companions</name>
 		<description>Familiar for the Parasite Patron</description>
 		<author>Dean Tevin</author>
-		<update version="0.0.3">
-			<file name="companions.xml" url="" />
+		<update version="0.0.1">
+			<file name="companions.xml" url="https://raw.githubusercontent.com/DeanTevin/Hombrewery5e/main/otherwordly-patron-parasite/companions.xml"/>
 		</update>
 	</info>
 
