@@ -7,10 +7,10 @@
     </update>
   </info>
   <files>
-    <file name="source.xml" url="https://github.com/DeanTevin/Hombrewery5e/raw/main/otherwordly-patron-parasite/source.xml" />
+    <file name="source.xml" url="https://github.com/DeanTevin/Hombrewery5e/raw/main/otherwordly-patron-parasite/source.xml"/>
     
     <!-- Supplements -->
-    <file name="companions.xml" url="https://raw.githubusercontent.com/DeanTevin/Hombrewery5e/main/otherwordly-patron-parasite/companions.xml" />
+    <file name="companions.xml" url="https://raw.githubusercontent.com/DeanTevin/Hombrewery5e/main/otherwordly-patron-parasite/companions.xml"/>
 
 		<!-- classes -->
 		<file name="warlock-parasite-patron.xml" url="https://raw.githubusercontent.com/DeanTevin/Hombrewery5e/main/otherwordly-patron-parasite/warlock-parasite-patron.xml" />
