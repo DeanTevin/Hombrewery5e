@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
+  <!-- Test file -->
     <update version="0.0.1">
       <file name="parasite-patron.index" url="https://raw.githubusercontent.com/DeanTevin/Hombrewery5e/main/parasite-patron.index"/>
     </update>
