@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-	<element name="The Parasite Patron" type="Source" source="Core" id="ID_HOMEBREWING_WARLOCK_PATRON_THE_PARASITE">
+	<element name="The Parasite Patron" type="Source" source="homebrew" id="ID_HOMEBREWING_WARLOCK_PATRON_THE_PARASITE">
 		<description>
 			<![CDATA[<p>None are understand the dangers that lurks in the far corner of the universes. 
             To those who seeks power, knowledge, or even retribution are worship this beings. 
