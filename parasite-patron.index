@@ -13,6 +13,6 @@
     <file name="companions.xml" url="https://raw.githubusercontent.com/DeanTevin/Hombrewery5e/main/otherwordly-patron-parasite/companions.xml"/>
 
 		<!-- classes -->
-		<file name="warlock-parasite-patron.xml" url="https://raw.githubusercontent.com/DeanTevin/Hombrewery5e/main/otherwordly-patron-parasite/warlock-parasite-patron.xml" />
+		<file name="warlock-parasite-patron.xml" url="https://raw.githubusercontent.com/DeanTevin/Hombrewery5e/main/otherwordly-patron-parasite/warlock-parasite-patron.xml"/>
   </files>
 </index>
