@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="The Parasite Patron" type="Source" source="Core" id="ID_HOMEBREWING_WARLOCK_PATRON_THE_PARASITE">
+		<description>
+			<![CDATA[<p>None are understand the dangers that lurks in the far corner of the universes. 
+            To those who seeks power, knowledge, or even retribution are worship this beings. 
+            Warlocks, are truest people that dabble in the power of deities, whether through their will or not.
+            <br/>
+            <br/>
+            Some had reached their own patrons and created bond through it. 
+            However, some of them talk about a deity that are so obscured and reclusive that are very unusual even to their understanding. This particular entity is known to resides within the warlock own body. It is known as the "Parasite", a creature who origin is unknown to you, to where it came from or how you now have a living creature inside of you. The Parasite isn't a deity or a devil, it is said to be an offspring of the star.
+            <br/>
+            <br/>
+            This creature is neither good or evil, it's only goal is to devour and spread itself to the world. 
+            As for the warlock, the Parasite was assumed closely tied to the Elder Evil, a beings in distant star floating in the astral sea. 
+            It became a medium for this Elder Evil to bestow the power to the warlock, and in return it use the warlock to suit their agenda. 
+            The Parasite telepathically speak to the warlock through the mortal mind (though not all the time). It speak in an eerie whispers that are full of riddles.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">WHP</set>
+			<set name="url">https://homebrewery.naturalcrit.com/share/iMXjEdHQk</set>
+			<set name="image"></set>
+			<set name="author">Dean Tevin</set>
+			<set name="homebrew">true</set>
+			<set name="release">20201017</set>
+			<set name="playtest">true</set>
+		</setters>
+	</element>
+</elements>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Companions</name>
+		<description>Familiar for the Parasite Patron</description>
+		<author>Dean Tevin</author>
+		<update version="0.0.3">
+			<file name="companions.xml" url="" />
+		</update>
+	</info>
+
+    <element name="Larvae Spawn" type="Companion" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_LARVAESPAWN">
+		<supports>Exclusive Familiar</supports>
+		<description>
+			<p>When you choose The Parasite patron, your patron bestow its very own familiar, 
+			causing this creature to burst out from your mouth and appear before you. 
+			This creature is known as a "Larvae", to which follow the rule of a familiar. 
+			<br/>
+			<br/>
+			The creature appear to look like a worm, yet it whole body is made from dozen of twisted tentacles. 
+			Despite is appearance, it is still capable to understand at least some form of languages, 
+			while using it tentacles to lift or carry items close to its size (no more than the size of a palm), 
+			though not able to wearing any kind of gears on it nasty form.</p>
+        </description>
+		<setters>
+			<set name="strength">5</set>
+			<set name="dexterity">17</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">11</set>
+			<set name="wisdom">7</set>
+			<set name="charisma">10</set>
+			<set name="ac">12</set>
+			<set name="hp">10 (3d4+3)</set>
+			<set name="speed">20 ft., burrow 30 ft.</set>
+			<set name="languages">Common, Deep Speech but can't speak</set>
+			<set name="skills">Stealth +5</set>
+			<set name="type">Abberation</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">1</set>
+			<set name="traits">ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_LARVAESPAWN_TRAIT_SHAPECHANGER,ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_LARVAESPAWN_TRAIT_MAGIC_RESISTANCE,ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_LARVAESPAWN_TRAIT_HOST_PROTECTION</set>
+			<set name="actions">ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_LARVAESPAWN_ACTION_BITE,ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_LARVAESPAWN_ACTION_INVISIBILITY,ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_LARVAESPAWN_ACTION_PARASITE_INVASION</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" />
+			<stat name="companion:hp:max" value="10" bonus="base" />
+			<stat name="companion:speed" value="20" bonus="base" />
+			<stat name="companion:speed:burrow" value="30" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Shapechanger" type="Companion Trait" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_LARVAESPAWN_TRAIT_SHAPECHANGER">
+		<description>
+			<p>The parasite can use its action to polymorph into a beast form that resembles a bat (speed 10 ft. fly 40 ft.), a giant centipede (40 ft., climb 40 ft.), or a trilobite (40 ft., swim 40 ft.), 
+			or back into its true form. Its statistics are the same in each form, except for the speed changes noted. 
+			Any equipment it is carrying isn't transformed. It reverts to its true form if it dies.
+			</p>
+		</description>
+		<sheet>
+			<description>The parasite can use its action to polymorph into a beast form that resembles a bat (speed 10 ft. fly 40 ft.), a giant centipede (40 ft., climb 40 ft.), or a trilobite (40 ft., swim 40 ft.), 
+			or back into its true form. Its statistics are the same in each form, except for the speed changes noted. 
+			Any equipment it is carrying isn't transformed. It reverts to its true form if it dies.
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Magic Resistance" type="Companion Trait" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_LARVAESPAWN_TRAIT_MAGIC_RESISTANCE">
+		<description>
+			<p>The parasite has advantage on saving throws against spells and other magical effects.</p>
+		</description>
+		<sheet>
+			<description>The parasite has advantage on saving throws against spells and other magical effects.</description>
+		</sheet>
+	</element>
+
+	<element name="Host Protection" type="Companion Trait" source="Monster Manual" id="ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_LARVAESPAWN_TRAIT_HOST_PROTECTION">
+		<description>
+			<p>While inside a creature, any attack against the creature will not hurt the parasite.</p>
+		</description>
+		<sheet>
+			<description>While inside a creature, any attack against the creature will not hurt the parasite.</description>
+		</sheet>
+	</element>
+
+	<element name="Bite (Beast Form)" type="Companion Action" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_LARVAESPAWN_ACTION_BITE">
+		<description>
+			<p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit (1d4 + 1) piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit (1d4 + 1) piercing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Invisibility" type="Companion Action"  source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_LARVAESPAWN_ACTION_INVISIBILITY">
+		<description>
+			<p>The parasite turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the parasite is carrying is invisible with it.</p>
+		</description>
+		<sheet>
+			<description>The parasite turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the parasite is carrying is invisible with it.</description>
+		</sheet>
+	</element>
+
+	<element name="Parasitic Invasion" type="Companion Action" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_LARVAESPAWN_ACTION_PARASITE_INVASION">
+		<description>
+			<p>As a bonus action you can command the larvae (while not burrowing underground), 
+			if it within 5 ft away from a target, the target needs to make DC 11 dexterity saving throw to avoid the creature. 
+			if it fails, the larvae leaps and dig through the target skin dealing 1d4 + 1 piercing damage and stay within it. 
+			Constructs, Elementals, and Undead automatically succeed this saving throw.
+			<br/>
+			<br/>
+			The target can repeat a saving throw at the start of its turn to shrug off the larvae from their body with a DC 12 Constitution save.
+			If the target success, the larvae ejects 5 feet away from the target . On a failed save, the target movement speed is reduced by 10 ft and get 1d4 + 2 irreducible damage.
+			This damage increases by 1d4 when you reach 9th Level (2d4)
+			</p>
+		</description>
+		<sheet>
+			<description>As a bonus action you can command the larvae (while not burrowing underground), 
+			if it within 5 ft away from a target, the target needs to make DC 11 dexterity saving throw to avoid the creature. 
+			if it fails, the larvae leaps and dig through the target skin dealing 1d4 + 1 piercing damage and stay within it. 
+			Constructs, Elementals, and Undead automatically succeed this saving throw.
+			<br/>
+			<br/>
+			The target can repeat a saving throw at the start of its turn to shrug off the larvae from their body with a DC 12 Constitution save.
+			If the target success, the larvae ejects 5 feet away from the target . On a failed save, the target movement speed is reduced by 10 ft and get 1d4 + 2 irreducible damage.
+			This damage increases by 1d4 when you reach 9th Level (2d4)
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Zombie Host" type="Companion" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_ZOMBIEHOST">
+		<description>
+        </description>
+		<setters>
+			<set name="strength">13</set>
+			<set name="dexterity">6</set>
+			<set name="constitution">16</set>
+			<set name="intelligence">11</set>
+			<set name="wisdom">7</set>
+			<set name="charisma">10</set>
+			<set name="ac">13</set>
+			<set name="hp">equal to zombie host's Constitution modifier + your Charisma modifier + your Proficiency Modifier + 2 times your level in this class</set>
+			<set name="speed">30 ft.</set>
+			<set name="senses">darkvision 60 ft., passive Perception 8</set>
+			<set name="languages">Common, Deep speech but can't speak</set>
+			<!-- <set name="skills"></set> -->
+			<set name="type">Undead</set>
+			<set name="size">Medium/Small</set>
+			<set name="alignment">unaligned</set>
+			<!-- Damage Immunities poison -->
+			<!-- Condition Immunities charmed, exhaustion, poisoned -->
+			<set name="challenge">1</set>
+			<!-- <set name="traits"></set> -->
+			<set name="actions">ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_ZOMBIEHOST_ACTION_MULTIATTACK,ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_ZOMBIEHOST_ACTION_CLAWS</set>
+			<!-- <set name="reactions">ID_WOTC_UA20190514_COMPANION_REACTION_IRON_DEFENDER_DEFENSIVE_POUNCH</set> -->
+		</setters>
+		<!-- <rules>		
+			<stat name="iron defender:hp" value="level:artificer" />
+			<stat name="iron defender:hp" value="level:artificer" />
+			<stat name="iron defender:hp" value="level:artificer" />
+			<stat name="iron defender:hp" value="level:artificer" />
+			<stat name="iron defender:hp" value="level:artificer" />
+			<stat name="iron defender:hp" value="intelligence:modifier" />
+			<stat name="iron defender:hp" value="2" />
+
+			<stat name="companion:ac" value="15" />
+			<stat name="companion:hp:max" value="iron defender:hp" bonus="base" />
+			<stat name="companion:speed" value="40" bonus="base" />
+
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="double" />
+		</rules> -->
+	</element>
+
+	<element name="Multiattack" type="Companion Action"  source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_ZOMBIEHOST_ACTION_MULTIATTACK">
+		<description>
+			<p>The zombie host makes two claw attacks</p>
+		</description>
+		<sheet>
+			<description>The zombie host makes two claw attacks</description>
+		</sheet>
+	</element>
+
+	<element name="Claws" type="Companion Action" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_ZOMBIEHOST_ACTION_CLAWS">
+		<description>
+			<p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit 5 (2d4 + 1) slashing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit 5 (2d4 + 1) slashing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Shadestalker" type="Companion" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_SHADESTALKER">
+		<description>
+        </description>
+		<setters>
+			<set name="strength">13</set>
+			<set name="dexterity">6</set>
+			<set name="constitution">16</set>
+			<set name="intelligence">11</set>
+			<set name="wisdom">7</set>
+			<set name="charisma">10</set>
+			<set name="ac">13</set>
+			<set name="hp">equal to your Proficiency modifier + your Charisma modifier + 2 times your level in this class</set>
+			<set name="speed">30 ft.</set>
+			<set name="senses">darkvision 60 ft., passive Perception 8</set>
+			<set name="languages">Common, Deep speech</set>
+			<set name="skills">Stealth +5</set>
+			<set name="type">Undead</set>
+			<set name="size">Medium/Small</set>
+			<set name="alignment">unaligned</set>
+			<!-- Damage Immunities poison -->
+			<!-- Condition Immunities charmed, exhaustion, poisoned -->
+			<set name="challenge">1</set>
+			<set name="traits">ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_SHADESTALKER_TRAIT_SHADOW_LURKER,ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_SHADESTALKER_TRAIT_SPIDER_CLIMB,ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_SHADESTALKER_TRAIT_TRACKLESS</set>
+			<set name="actions">ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_SHADESTALKER_ACTION_MULTIATTACK,ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_SHADESTALKER_ACTION_CLAWS</set>
+			<!-- <set name="reactions">ID_WOTC_UA20190514_COMPANION_REACTION_IRON_DEFENDER_DEFENSIVE_POUNCH</set> -->
+		</setters>
+		<!-- <rules>		
+			<stat name="iron defender:hp" value="level:artificer" />
+			<stat name="iron defender:hp" value="level:artificer" />
+			<stat name="iron defender:hp" value="level:artificer" />
+			<stat name="iron defender:hp" value="level:artificer" />
+			<stat name="iron defender:hp" value="level:artificer" />
+			<stat name="iron defender:hp" value="intelligence:modifier" />
+			<stat name="iron defender:hp" value="2" />
+
+			<stat name="companion:ac" value="15" />
+			<stat name="companion:hp:max" value="iron defender:hp" bonus="base" />
+			<stat name="companion:speed" value="40" bonus="base" />
+
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="double" />
+		</rules> -->
+	</element>
+
+	<element name="Shadow Lurker" type="Companion Trait" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_SHADESTALKER_TRAIT_SHADOW_LURKER">
+		<description>
+			<p>The creature has advantage on Dexterity (Stealth) checks while in dim light and darkness.
+			</p>
+		</description>
+		<sheet>
+			<description>The creature has advantage on Dexterity (Stealth) checks while in dim light and darkness.
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Spider Climb" type="Companion Trait" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_SHADESTALKER_TRAIT_SPIDER_CLIMB">
+		<description>
+			<p>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make ability check.
+			</p>
+		</description>
+		<sheet>
+			<description>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make ability check.
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Trackless" type="Companion Trait" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_SHADESTALKER_TRAIT_TRACKLESS">
+		<description>
+			<p>It leaves no tracks to indicate where it has been or where it's headed.
+			</p>
+		</description>
+		<sheet>
+			<description>It leaves no tracks to indicate where it has been or where it's headed.
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Multiattack" type="Companion Action"  source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_SHADESTALKER_ACTION_MULTIATTACK">
+		<description>
+			<p>The shadestalker makes two claw attacks</p>
+		</description>
+		<sheet>
+			<description>The shadestalker makes two claw attacks</description>
+		</sheet>
+	</element>
+
+	<element name="Claws" type="Companion Action" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_PARASITE_COMPANION_SHADESTALKER_ACTION_CLAWS">
+		<description>
+			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit 7 (2d4 + 3) slashing damage. If it has advantage on the attack roll, the target also take 6 (2d6) necrotic damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit 7 (2d4 + 3) slashing damage. If it has advantage on the attack roll, the target also take 6 (2d6) necrotic damage.</description>
+		</sheet>
+	</element>
+
+</elements>

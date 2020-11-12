@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Warlock otherworldly patron : The Parasite</name>
+		<description>The Parasite Patron</description>
+		<author>Dean Tevin</author>
+		<update version="0.0.2">
+			<file name="warlock-accursed-archive.xml" url="" />
+		</update>
+	</info>
+
+  <element name="The Parasite" type="Option" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_OPTION_PARASITE">
+		<description>
+			<p>The parasite needs a suitable host to thrive and live. 
+				It needs creature that are biologically consist of flesh. The creature needs to be alive and not an Undead. 
+				Some example of the race below are not suitable for the parasite to use as a host; Warforged, Revenant, Vampire, etc.</p>
+			<p class="indent">Your DM can lift this restriction to better suit the campaign. It might not apply to your DM's setting or your DM's version of the Realms.</p>
+		</description>
+		<setters>
+			<set name="short">Allow any creature to choose the Parasite otherworldly patron.</set>
+		</setters>
+  </element>
+
+  <element name="The Parasite Patron" type="Archetype" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE">
+		<supports>Otherworldly Patron</supports>
+		<!-- Need to be refined -->
+		<requirements>ID_SRD_RACE_DWARF||ID_HOMEBREWING_WARLOCK_OPTION_PARASITE</requirements>
+		<description>
+			<p>None are understand the dangers that lurks in the far corner of the universes. 
+            To those who seeks power, knowledge, or even retribution are worship this beings. 
+            Warlocks, are truest people that dabble in the power of deities, whether through their will or not.
+            <br/>
+            <br/>
+            Some had reached their own patrons and created bond through it. 
+            However, some of them talk about a deity that are so obscured and reclusive that are very unusual even to their understanding. This particular entity is known to resides within the warlock own body. It is known as the "Parasite", a creature who origin is unknown to you, to where it came from or how you now have a living creature inside of you. The Parasite isn't a deity or a devil, it is said to be an offspring of the star.
+            <br/>
+            <br/>
+            This creature is neither good or evil, it's only goal is to devour and spread itself to the world. 
+            As for the warlock, the Parasite was assumed closely tied to the Elder Evil, a beings in distant star floating in the astral sea. 
+            It became a medium for this Elder Evil to bestow the power to the warlock, and in return it use the warlock to suit their agenda. 
+            The Parasite telepathically speak to the warlock through the mortal mind (though not all the time). It speak in an eerie whispers that are full of riddles.</p>
+			<!-- Restriction -->
+			<div class="sidebar">
+				<h5>RESTRICTION: LIVING CREATURE ONLY</h5>
+				<p>The parasite needs a suitable host to thrive and live. 
+				It needs creature that are biologically consist of flesh. The creature needs to be alive and not an Undead. 
+				Some example of the race below are not suitable for the parasite to use as a host; Warforged, Revenant, Vampire, etc.</p>
+				<br/>
+				<p class="indent">Your DM can lift this restriction to better suit the campaign. It might not apply to your DM's setting or your DM's version of the Realms.</p>
+			</div>
+			<!-- <p class="indent">Entities of this type include Ghaunadar, called That Which Lurks; Tharizdun, the Chained God; Dendar, the Night Serpent; Zargon, the Returner; Great Cthulhu; and other unfathomable beings.</p> -->
+			<div element="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_EXPANDED_SPELL_LIST"/>
+			<div element="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_HOST_OF_THE_PATRON"/>
+			<div element="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_LARVAE_SPAWN_SUPPORT"/>
+			<div element="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_VENOMOUS_OVERDOSE"/>
+			<div element="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_SYMBIOTIC_MUTATION"/>
+			<div element="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_SEED_OF_DESTRUCTION"/>
+		</description>
+		<sheet display="false">
+			<description>Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_HOST_OF_THE_PATRON" level="1" />
+			<grant type="Archetype Feature" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_LARVAE_SPAWN_SUPPORT" level="3" />
+			<grant type="Archetype Feature" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_VENOMOUS_OVERDOSE" level="6" />
+			<grant type="Archetype Feature" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_SYMBIOTIC_MUTATION" level="10" />
+			<grant type="Archetype Feature" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_SEED_OF_DESTRUCTION" level="14" />
+		</rules>
+	</element>
+	
+	<element name="Expanded Spell List" type="Archetype Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Parasite lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">PARASITE EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>inflict wounds, ray of sickness</em></td></tr>
+				<tr><td>2nd</td><td><em>detect thoughts, spike growth</em></td></tr>
+				<tr><td>3rd</td><td><em>nondetection, stinking cloud</em></td></tr>
+				<tr><td>4th</td><td><em>phantasmal killer, evard’s black tentacles</em></td></tr>
+				<tr><td>5th</td><td><em>awaken, insect plague</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Parasite lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_INFLICT_WOUNDS</extend>
+			<extend>ID_PHB_SPELL_RAY_OF_SICKNESS</extend>
+			<extend>ID_PHB_SPELL_DETECT_THOUGHTS</extend>
+			<extend>ID_PHB_SPELL_SPIKE_GROWTH</extend>
+			<extend>ID_PHB_SPELL_NONDETECTION</extend>
+			<extend>ID_PHB_SPELL_STINKING_CLOUD</extend>
+			<extend>ID_PHB_SPELL_PHANTASMAL_KILLER</extend>
+			<extend>ID_PHB_SPELL_EVARDS_BLACK_TENTACLES</extend>
+			<extend>ID_PHB_SPELL_AWAKEN</extend>
+			<extend>ID_PHB_SPELL_INSECT_PLAGUE</extend>
+		</spellcasting>
+	</element>
+	
+	<element name="Host of the Patron" type="Archetype Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_HOST_OF_THE_PATRON">
+		<description>
+			<p>Starting at 1st level, your body has been altered and improve by the Parasite living within your body. Any of your poison based spells and ability gained an added damage equal to your Charisma modifier. 
+			<br/>
+			<br/>
+			your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class. 
+			You also learn additional Infestation cantrip that doesn’t count against your number of spells known. The Infestation cantrip gains additional range up to 60 ft. 
+			<br/>
+			<br/>
+			Lastly, at 3rd level you gain service from an avatar of your patron as a Larvae spawn.</p>
+		</description>
+		<sheet>
+			<p>Any of your poison based spells and ability gained an added damage equal to your Charisma modifier. 
+			<br/>
+			<br/>
+			Your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class. 
+			You also learn additional Infestation cantrip that doesn’t count against your number of spells known. The Infestation cantrip gains additional range up to 60 ft. 
+			<br/>
+			<br/>
+			Lastly, at 3rd level you gain service from an avatar of your patron as a Larvae spawn.</p>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_INFESTATION" />
+			<stat name="parasite:constitution modifier" value="constitution:modifier" />
+			<stat name="parasite:hd:bonus" value="2" bonus="achetype:parasite" />
+			<stat name="parasite:hd:bonus" value="parasite:constitution modifier" bonus="archetype:parasite" />
+		</rules>
+	</element>
+	
+	<element name="Larvae Spawn" type="Archetype Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_LARVAE_SPAWN_SUPPORT">
+		<supports>Host of the Patron</supports>
+		<prerequisite>The Parasite Patron</prerequisite>
+		<description>
+		<div class="sidebar">
+				<h5>Larvae Spawn Notes:</h5>
+				<p>In combat, The larvae follows your order of initiative and you can use bonus action to control how it acts (it can only attack using a reaction, unless stated otherwise). 
+				<br/>
+				<br/>
+				The Larvae is living inside of you. If you wish to summon the larvae you can use a bonus action to vomit it out from the inside of your body or if you want to dismiss it you can store it by swallowing the larvae. The larvae doesn’t require sleep. However, it can lay dormant while inside of your body. Additionally if you store the larvae inside your body during a short or long rest, the larvae will restore any loss hit points. 
+				<br/>
+				<br/>
+				The larvae vanishes when it dies, if you die, or if the two of you are separated by more than 5 miles. You can sense the exact position of your larvae within 2 mile radius. 
+				<br/>
+				<br/>
+				At the end of a short or long rest, you can call the larvae back to you—no matter where it is or whether it died—and it reappears in the inside of your body. You can only control one larvae at a time.</p>
+		</div>
+		</description>
+		<sheet>
+			<h5>Larvae Spawn Notes:</h5>
+				<p>In combat, The larvae follows your order of initiative and you can use bonus action to control how it acts (it can only attack using a reaction, unless stated otherwise). 
+				<br/>
+				<br/>
+				The Larvae is living inside of you. If you wish to summon the larvae you can use a bonus action to vomit it out from the inside of your body or if you want to dismiss it you can store it by swallowing the larvae. The larvae doesn’t require sleep. However, it can lay dormant while inside of your body. Additionally if you store the larvae inside your body during a short or long rest, the larvae will restore any loss hit points. 
+				<br/>
+				<br/>
+				The larvae vanishes when it dies, if you die, or if the two of you are separated by more than 5 miles. You can sense the exact position of your larvae within 2 mile radius. 
+				<br/>
+				<br/>
+				At the end of a short or long rest, you can call the larvae back to you—no matter where it is or whether it died—and it reappears in the inside of your body. You can only control one larvae at a time.</p>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" spellcasting="Warlock" />
+			<select type="Companion" name="Host of The Patron familiar, Larvae Spawn" supports="Exclusive Familiar" />
+		</rules>
+	</element>
+	
+	<element name="Venomous Overdose" type="Archetype Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_VENOMOUS_OVERDOSE">
+		<description>
+			<p>
+			At 6th level, your poison became more potent and ignores resistances against poison. 
+			<br/>
+			<br/>
+			When you cast a spell or use an ability that results in poison damage, you may use bonus action to choose one creature that are affected by the poison damage to roll Wisdom saving throw against your spell save DC. On a failed save the creature cannot use its reaction until the end of your next turn.
+			<br/>
+			<br/>
+			</p>
+			<p class="indent">You cannot target a creature with this feature again for 24 hours, if it succeed the saving throw.</p>
+		</description>
+		<sheet>
+			<description>
+			At 6th level, your poison became more potent and ignores resistances against poison. 
+			<br/>
+			<br/>
+			When you cast a spell or use an ability that results in poison damage, you may use bonus action to choose one creature that are affected by the poison damage to roll Wisdom saving throw against your spell save DC. On a failed save the creature cannot use its reaction until the end of your next turn.
+			<br/>
+			<br/>
+			You cannot target a creature with this feature again for 24 hours, if it succeed the saving throw.
+			</description>
+		</sheet>
+	</element>
+	
+	<element name="Symbiotic Mutation" type="Archetype Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_SYMBIOTIC_MUTATION">
+		<description>
+			<p>
+			Starting at 10th level, your Patron can alter your body in order to be suited for any situation you may find yourself in need to survive. With an action, you can choose one of the abilities below to be used for 1 hour. 
+			<br/>
+			<br/>You can use this feature once per long rest. 
+			</p>
+			<div class="sidebar">
+				<h5>Burrowing:</h5>
+				<p>You transform your hands and feet into a set of claws that are design to dig through the ground and break through rocks with ease. 
+				You can travel up to 40 ft speed beneath the ground, and with the aid of 60 ft of Tremorsense will give you the ability to feel the vibration on the ground. </p>
+				<br/>
+				<p class="indent">You can dig 10 by 10 feet cube of dirt and rocks in 5 minutes.</p>
+			</div>
+			<div class="sidebar">
+				<h5>Swimming:</h5>
+				<p>You can grow to possessing two, long tentacles from the back of your body that can aid you while swimming, with 40 ft swim speed. You also grow gills to accomodate breathing underwater. 
+				</p>
+				<br/>
+				<p class="indent">You can’t manifest your tentacles while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your tentacles might be destroyed when you manifest them. </p>
+			</div>
+			<div class="sidebar">
+				<h5>Climbing:</h5>
+				<p>You can grow to possessing two, long spider-like appendages from the back of your body, that allow you to climb up wall and ceiling with ease, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a climbing speed equal to your walking speed. </p>
+				<br/>
+				<p class="indent">You can’t manifest your appendages while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your appendages might be destroyed when you manifest them. </p>
+			</div>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>
+			<p>
+			Starting at 10th level, your Patron can alter your body in order to be suited for any situation you may find yourself in need to survive. With an action, you can choose one of the abilities below to be used for 1 hour. 
+			<br/>
+			<br/>You can use this feature once per long rest. 
+			</p>
+
+			<div class="sidebar">
+				<h5>Burrowing:</h5>
+				<p>You transform your hands and feet into a set of claws that are design to dig through the ground and break through rocks with ease. 
+				You can travel up to 40 ft speed beneath the ground, and with the aid of 60 ft of Tremorsense will give you the ability to feel the vibration on the ground. </p>
+				<br/>
+				<p class="indent">You can dig 10 by 10 feet cube of dirt and rocks in 5 minutes.</p>
+			</div>
+
+			<div class="sidebar">
+				<h5>Swimming:</h5>
+				<p>You can grow to possessing two, long tentacles from the back of your body that can aid you while swimming, with 40 ft swim speed. You also grow gills to accomodate breathing underwater. 
+				</p>
+				<br/>
+				<p class="indent">You can’t manifest your tentacles while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your tentacles might be destroyed when you manifest them. </p>
+			</div>
+
+			<div class="sidebar">
+				<h5>Climbing:</h5>
+				<p>You can grow to possessing two, long spider-like appendages from the back of your body, that allow you to climb up wall and ceiling with ease, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a climbing speed equal to your walking speed. </p>
+				<br/>
+				<p class="indent">You can’t manifest your appendages while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your appendages might be destroyed when you manifest them. </p>
+			</div>
+			</description>
+		</sheet>
+	</element>
+	
+	<element name="Seed of Destruction" type="Archetype Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_SEED_OF_DESTRUCTION">
+		<description>
+			<p>
+			Starting at 14th level, when you hit a creature with an attack, you can use this feature to curse a creature with the Seed of Destruction. This seed contains a parasitic insect that burst when the creature dies. 
+			<br/><br/>
+			If the target is not a Construct, Elemental, or Undead, it takes 5d10 necrotic damage as The Seed of Destruction embedded to its body. 
+			<br/><br/>
+			The Seed of Destruction remains within the target body for 48 hours or until it get dispelled by Remove Curse spell. You cannot target the same creature if the seed is still inside their body. 
+			<br/><br/>
+			If a creature embedded by the Seed of Destruction reduced to 0 hit points, 2 swarm of parasite (See Swarm of Insects for statistic) will emerge from the corpse. 
+			<br/><br/>
+			The swarm rolls its own initiative and will attack any hostile creature towards you. It will dispersed into ash after 5 minute. 
+			<br/><br/>
+			</p>
+			<p class="indent">You can use this feature up to half of your proficiency modifier. Finishing a long rest regains all expended uses.</p>
+		</description>
+		<sheet action="Action" usage="[proficiency:half]/Long Rest">
+			<description>
+				<p>
+				Starting at 14th level, when you hit a creature with an attack, you can use this feature to curse a creature with the Seed of Destruction. This seed contains a parasitic insect that burst when the creature dies. 
+				<br/><br/>
+				If the target is not a Construct, Elemental, or Undead, it takes 5d10 necrotic damage as The Seed of Destruction embedded to its body. 
+				<br/><br/>
+				The Seed of Destruction remains within the target body for 48 hours or until it get dispelled by Remove Curse spell. You cannot target the same creature if the seed is still inside their body. 
+				<br/><br/>
+				If a creature embedded by the Seed of Destruction reduced to 0 hit points, 2 swarm of parasite (See Swarm of Insects for statistic) will emerge from the corpse. 
+				<br/><br/>
+				The swarm rolls its own initiative and will attack any hostile creature towards you. It will dispersed into ash after 5 minute. 
+				<br/><br/>
+				</p>
+				<p class="indent">You can use this feature up to half of your proficiency modifier. Finishing a long rest regains all expended uses.</p>
+			</description>
+		</sheet>
+	</element>
+
+<!-- The Parasite: Eldritch Invocations -->
+
+	<element name="Codex of The Worm-tongue" type="Class Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_ELDRITCH_INVOCATION_CODEX_OF_WORM">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>The Parasite patron, Pact of the Tome, 15th level</prerequisite>
+		<requirements>ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE,ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME,[level:15]</requirements>
+		<description>
+			<p><em>Prerequisite: The Parasite patron, Pact of the Tome, 15th level </em></p>
+			<p>You can use bonus action to cast <em>Infestation</em> cantrip. You can do this feature equal to half your proficiency modifier. You gain expended uses after finishing short or long rest.</p>
+			<div class="reference">
+				<div element="ID_XGTE_SPELL_INFESTATION" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can use bonus action to cast <em>Infestation</em> cantrip. You can do this feature equal to half your proficiency modifier. You gain expended uses after finishing short or long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Knowledge of The Star-spawn" type="Class Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_ELDRITCH_INVOCATION_KNOWLEDGE_OF_STAR">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>The Parasite patron, Pact of the Tome, 9th level</prerequisite>
+		<requirements>ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE,ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME,[level:9]</requirements>
+		<description>
+			<p><em>Prerequisite: The Parasite patron, Pact of the Tome, 9th level </em></p>
+			<p>Your tome reserved a knowledge of significant myths and lore. You can cast <em>Legend Lore</em> without using any spell slot once per day.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_LEGEND_LORE" />
+			</div>
+		</description>
+		<sheet usage="1/Day">
+			<description>Your tome reserved a knowledge of significant myths and lore. You can cast <em>Legend Lore</em> without using any spell slot once per day.</description>
+		</sheet>
+	</element>
+
+	<element name="Unbreakable Grips" type="Class Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_ELDRITCH_INVOCATION_UNBREAKABLE_GRIPS">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>The Parasite patron, Pact of the Blade</prerequisite>
+		<requirements>ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE,ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE</requirements>
+		<description>
+			<p><em>Prerequisite : The Parasite patron, Pact of the Blade </em></p>
+			<p>When you summon your pact weapon, your hand are meld with the hilt, you can't be disarmed while wielding your pact weapon.</p>
+		</description>
+		<sheet>
+			<description>When you summon your pact weapon, your hand are meld with the hilt, you can't be disarmed while wielding your pact weapon.</description>
+		</sheet>
+	</element>
+
+	<element name="Chitinous Armor of The Blade" type="Class Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_ELDRITCH_INVOCATION_CHITIN_BLADE_ARMOR">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>The Parasite patron, Pact of the Blade, 9th level</prerequisite>
+		<requirements>ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE,ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE,[level:9]</requirements>
+		<description>
+			<p><em>Prerequisite : The Parasite patron, Pact of the Blade, 9th level </em></p>
+			<p>At the start of your turn in combat when you are not wearing any armor, your Armor Class is equal to 10 + your Dexterity modifier + your Charisma modifier. However your body shape changes drastically, you cannot use a shield in this manner.</p>
+		</description>
+		<sheet>
+			<description>At the start of your turn in combat when you are not wearing any armor, your Armor Class is equal to 10 + your Dexterity modifier + your Charisma modifier. However your body shape changes drastically, you cannot use a shield in this manner.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:chitin blade armor:base" value="10" />
+			<stat name="ac:chitin blade armor:dexterity" value="dexterity:modifier" />
+			<stat name="ac:chitin blade armor:charisma" value="charisma:modifier" />
+
+			<stat name="ac:chitin blade armor" value="ac:chitin blade armor:base" />
+			<stat name="ac:chitin blade armor" value="ac:chitin blade armor:dexterity" />
+			<stat name="ac:chitin blade armor" value="ac:chitin blade armor:charisma" />
+
+			<stat name="ac:calculation" value="ac:chitin blade armor" bonus="calculation" equipped="[armor:none]" alt="Chitin Blade Armor (The Parasite)"/>
+		</rules>
+	</element>
+
+	<element name="Pact weapon of The Worm" type="Class Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_ELDRITCH_INVOCATION_WORM_PACT_BLADE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>The Parasite patron, Pact of the Blade, 12th level</prerequisite>
+		<requirements>ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE,ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE,[level:12]</requirements>
+		<description>
+			<p><em>Prerequisite : The Parasite patron, Pact of the Blade, 12th level </em></p>
+			<p>If you crit against a target, the target needs to make a Constitution save against your spell save DC or being paralyzed by a poison until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>If you crit against a target, the target needs to make a Constitution save against your spell save DC or being paralyzed by a poison until the end of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:chitin blade armor:base" value="10" />
+			<stat name="ac:chitin blade armor:dexterity" value="dexterity:modifier" />
+			<stat name="ac:chitin blade armor:charisma" value="charisma:modifier" />
+
+			<stat name="ac:chitin blade armor" value="ac:chitin blade armor:base" />
+			<stat name="ac:chitin blade armor" value="ac:chitin blade armor:dexterity" />
+			<stat name="ac:chitin blade armor" value="ac:chitin blade armor:charisma" />
+
+			<stat name="ac:calculation" value="ac:chitin blade armor" bonus="calculation" equipped="[armor:none]" alt="Chitin Blade Armor (The Parasite)"/>
+		</rules>
+	</element>
+
+	<element name="Blade of Lethargy" type="Class Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_ELDRITCH_INVOCATION_LETHARGY_BLADE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>The Parasite patron, Pact of the Blade</prerequisite>
+		<requirements>ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE,ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE</requirements>
+		<description>
+			<p><em>Prerequisite : The Parasite patron, Pact of the Blade</em></p>
+			<p>When you hit a target with your pact weapon, you can reduce the creature speed by 10 ft until the end of its turn.</p>
+		</description>
+		<sheet>
+			<description>When you hit a target with your pact weapon, you can reduce the creature speed by 10 ft until the end of its turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Visions of The Damned" type="Class Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_ELDRITCH_INVOCATION_DAMNED_VISIONS">
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p>You can touch a corpse to tap into its experience and see what its sees or perceive for 15 minutes back before it dies. The spell fails if the corpse was the target of this spell within the last 10 days.</p>
+		</description>
+		<sheet>
+			<description>You can touch a corpse to tap into its experience and see what its sees or perceive for 15 minutes back before it dies. The spell fails if the corpse was the target of this spell within the last 10 days.</description>
+		</sheet>
+	</element>
+
+	<element name="Parasitic Gaze" type="Class Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_ELDRITCH_INVOCATION_PARASITIC_BLADE">
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p>You can cast Detect Poison and Disease at will, without expending a spell slot or material components.</p>
+		</description>
+		<sheet>
+			<description>You can cast Detect Poison and Disease at will, without expending a spell slot or material components.</description>
+		</sheet>
+	</element>
+
+	<element name="Eldritch Tendrils" type="Class Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_ELDRITCH_INVOCATION_PARASITIC_BLADE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>The Parasite patron, eldritch blast cantrip</prerequisite>
+		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST</requirements>
+		<description>
+			<p><em>Prerequisite: The Parasite patron, eldritch blast cantrip</em></p>
+			<p>When you critically hits a large or small creature with Eldritch Blast cantrip, numerous black tendrils wraps the creature. The creature needs to make a strength saving throw against your spell save DC. on a failed save, it restrained from the end of your turn until the start of your next turn. 
+			<br/><br/>
+			The creature can make another strength saving throw at the start of its turn to break free from the tendrils.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_ELDRITCH_BLAST" />
+			</div>
+		</description>
+		<sheet>
+			<description>When you critically hits a large or small creature with Eldritch Blast cantrip, numerous black tendrils wraps the creature. The creature needs to make a strength saving throw against your spell save DC. on a failed save, it restrained from the end of your turn until the start of your next turn. 
+			<br/><br/>
+			The creature can make another strength saving throw at the start of its turn to break free from the tendrils.</description>
+		</sheet>
+	</element>
+	
+	<element name="Deathwalker Parasite" type="Class Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_ELDRITCH_INVOCATION_PARASITIC_DEATHWALKER">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>The Parasite patron, Pact of the Chain, 9th level</prerequisite>
+		<requirements>ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE,ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CHAIN,[level:9]</requirements>
+		<description>
+			<p><em>The Parasite patron, Pact of the Chain, 9th level</em></p>
+			<p>If you have a Larvae Spawn as a familiar, while in its true form you can command it as a bonus action to manifest a small or medium sized humanoid corpse within 5 ft of your larvae and use it as a Zombie Host. 
+			<br/><br/>
+			If the zombie drops to 0 hit point, the larvae will eject 5 ft away from the corpse, and any excess damage carries over to the larvae. You can issue a command for the zombie host using bonus action. 
+			<br/><br/>
+			When the larvae leaves the host, you must finish a long rest before using this feature again.</p>
+		</description>
+		<sheet>
+			<description>
+			If you have a Larvae Spawn as a familiar, while in its true form you can command it as a bonus action to manifest a small or medium sized humanoid corpse within 5 ft of your larvae and use it as a Zombie Host. 
+			<br/><br/>
+			If the zombie drops to 0 hit point, the larvae will eject 5 ft away from the corpse, and any excess damage carries over to the larvae. You can issue a command for the zombie host using bonus action. 
+			<br/><br/>
+			When the larvae leaves the host, you must finish a long rest before using this feature again.</description>
+		</sheet>
+	</element>
+
+	<element name="Shadestalker Parasite" type="Class Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_ELDRITCH_INVOCATION_PARASITIC_DEATHWALKER">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>The Parasite patron, Pact of the Chain, 12th level</prerequisite>
+		<requirements>ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE,ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CHAIN,[level:9]</requirements>
+		<description>
+			<p><em>The Parasite patron, Pact of the Chain, 12th level</em></p>
+			<p>You can swap your Deathwalker Parasite invocation with this one (you can't pick both), You can command your larvae as a bonus action to manifest a small or medium sized humanoid corpse within 5 ft of your larvae and use it as a Shadestalker.  
+			<br/><br/>
+			If the Shadestalker drops to 0 hit point, the larvae will eject 5 ft away from the corpse, and any excess damage carries over to the larvae. You can issue a command for the Shadestalker using bonus action. 
+			<br/><br/>
+			When the larvae leaves the host, you must finish a long rest before using this feature again.</p>
+		</description>
+		<sheet>
+			<description>
+			You can swap your Deathwalker Parasite invocation with this one (you can't pick both), You can command your larvae as a bonus action to manifest a small or medium sized humanoid corpse within 5 ft of your larvae and use it as a Shadestalker.  
+			<br/><br/>
+			If the Shadestalker drops to 0 hit point, the larvae will eject 5 ft away from the corpse, and any excess damage carries over to the larvae. You can issue a command for the Shadestalker using bonus action. 
+			<br/><br/>
+			When the larvae leaves the host, you must finish a long rest before using this feature again.</description>
+		</sheet>
+	</element>
+	
+</elements>
