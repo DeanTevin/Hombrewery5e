@@ -32,13 +32,18 @@
             <br/>
             <br/>
             Some had reached their own patrons and created bond through it. 
-            However, some of them talk about a deity that are so obscured and reclusive that are very unusual even to their understanding. This particular entity is known to resides within the warlock own body. It is known as the "Parasite", a creature who origin is unknown to you, to where it came from or how you now have a living creature inside of you. The Parasite isn't a deity or a devil, it is said to be an offspring of the star.
+			However, some of them talk about a deity that are so obscured and reclusive that are 
+			very unusual even to their understanding. This particular entity is known to resides within 
+			the warlock own body. It is known as the "Parasite", a creature whose origin is unknown to you, 
+			to where it came from or how you now have a living creature inside you. The Parasite isn't a deity 
+			or a devil, it is said to be an offspring of stars. 
             <br/>
             <br/>
             This creature is neither good or evil, it's only goal is to devour and spread itself to the world. 
-            As for the warlock, the Parasite was assumed closely tied to the Elder Evil, a beings in distant star floating in the astral sea. 
-            It became a medium for this Elder Evil to bestow the power to the warlock, and in return it use the warlock to suit their agenda. 
-            The Parasite telepathically speak to the warlock through the mortal mind (though not all the time). It speak in an eerie whispers that are full of riddles.</p>
+			As for the warlock, the Parasite was assumed closely tied to the Elder Evil, a beings in distant time 
+			that floats in the astral sea. It became a medium for this Elder Evil to bestow the power to the warlock, 
+			and in return it use the warlock to suit their agenda. The Parasite telepathically speak to the warlock through 
+			the mortal mind (though not all the time). It speak in an eerie whispers that are full of riddles.</p>
 			<!-- Restriction -->
 			<div class="sidebar">
 				<h5>RESTRICTION: LIVING CREATURE ONLY</h5>
@@ -195,7 +200,9 @@
 	<element name="Symbiotic Mutation" type="Archetype Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_SYMBIOTIC_MUTATION">
 		<description>
 			<p>
-			Starting at 10th level, your Patron can alter your body in order to be suited for any situation you may find yourself in need to survive. With an action, you can choose one of the abilities below to be used for 1 hour. 
+			Starting at 10th level, your Patron can alter your body in order to be suited for any situation you may find yourself in need to survive. 
+			With an action, you can choose one of the abilities below to be used for 1 hour. 
+			You also gain resistances against poison and immunity from being poisoned.
 			<br/>
 			<br/>You can use this feature once per long rest. 
 			</p>
@@ -220,6 +227,13 @@
 				<p class="indent">You can’t manifest your appendages while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your appendages might be destroyed when you manifest them. </p>
 			</div>
 		</description>
+		<sheet>
+			<description>
+				<p>
+				You gain resistances against poison and immunity from being poisoned.
+				</p>
+			</description>
+		</sheet>
 		<sheet action="Action" usage="1/Long Rest">
 			<description>
 			<p>
@@ -252,6 +266,9 @@
 			</div>
 			</description>
 		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
 	</element>
 	
 	<element name="Seed of Destruction" type="Archetype Feature" source="The Parasite Patron" id="ID_HOMEBREWING_WARLOCK_ARCHETYPE_OTHERWORLDLY_PATRON_THE_PARASITE_SEED_OF_DESTRUCTION">
