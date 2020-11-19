@@ -4,7 +4,7 @@
 		<name>Warlock otherworldly patron : The Parasite</name>
 		<description>The Parasite Patron</description>
 		<author>Dean Tevin</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="warlock-parasite-patron.xml" url="https://raw.githubusercontent.com/DeanTevin/Hombrewery5e/main/otherwordly-patron-parasite/warlock-parasite-patron.xml"/>
 		</update>
 	</info>
